@@ -9,7 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build && deployctl deploy --project=long-bee-16 https://deno.land/std@0.171.0/http/file_server.ts --include=./dist"
+    "deploy": "npm run build && cd dist/ && deployctl deploy --project=long-bee-16 https://deno.land/std@0.171.0/http/file_server.ts"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.0",
