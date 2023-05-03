@@ -12,4 +12,9 @@ export default defineConfig({
     tailwind({ config: { applyBaseStyles: false } }),
     react(),
   ],
+  vite: {
+    ssr: {
+      noExternal: ["@radix-ui/*"],
+    },
+  },
 });
