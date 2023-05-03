@@ -32,11 +32,11 @@ export function TabsDemo() {
           <CardContent className="space-y-2">
             <div className="space-y-1">
               <Label htmlFor="name">Name</Label>
-              <Input id="name" defaultValue="Pedro Duarte" />
+              <Input id="name" defaultValue="fau" />
             </div>
             <div className="space-y-1">
               <Label htmlFor="username">Username</Label>
-              <Input id="username" defaultValue="@peduarte" />
+              <Input id="username" defaultValue="@ph4un00b" />
             </div>
           </CardContent>
           <CardFooter>
