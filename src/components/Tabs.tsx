@@ -10,13 +10,16 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { BellRing, Check } from 'lucide-react';
+import { Switch } from '@/components/ui/switch';
 
 export function TabsDemo() {
   return (
     <Tabs defaultValue="account" className="w-[400px]">
-      <TabsList className="grid w-full grid-cols-2">
+      <TabsList className="grid w-full grid-cols-3">
         <TabsTrigger value="account">Account</TabsTrigger>
         <TabsTrigger value="password">Password</TabsTrigger>
+        <TabsTrigger value="extra">Extra</TabsTrigger>
       </TabsList>
       <TabsContent value="account">
         <Card>
@@ -64,6 +67,20 @@ export function TabsDemo() {
           </CardFooter>
         </Card>
       </TabsContent>
+      <TabsContent value='extra'>
+      <div className=" flex items-center space-x-4 rounded-md border p-4">
+          <BellRing />
+          <div className="flex-1 space-y-1">
+            <p className="text-sm font-medium leading-none">
+              Push Notifications
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Send notifications to device.
+            </p>
+          </div>
+          <Switch />
+        </div>
+      </TabsContent >
     </Tabs>
   );
 }
