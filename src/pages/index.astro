@@ -1,0 +1,27 @@
+---
+// Component Imports
+import { Button } from "@/components/ui/button"
+import { TabsDemo } from "@/components/Tabs"
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+import '../base.css';
+---
+
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro + TailwindCSS</title>
+	</head>
+
+	<body>
+		<div class="grid place-items-center h-screen content-center">
+			<TabsDemo/>
+			<Button variant="destructive">Destructive</Button>
+			<a href="/markdown-page" class="p-4 underline">hola is also supported...</a>
+		</div>
+	</body>
+</html>
