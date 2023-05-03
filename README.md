@@ -5,4 +5,4 @@
 - [x] @radixiu
 - [x] shadcn/ui
 - [x] https://fontsource.org/fonts/dm-sans
-- [ ] deno deploy
+- [x] deno deploy
